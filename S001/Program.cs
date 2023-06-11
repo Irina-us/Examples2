@@ -19,3 +19,6 @@ else
     System.Console.WriteLine($"Наибольшая цифра этого числа {x2}");
 else
     System.Console.WriteLine($"Цифры равны {x2}");
+
+for (int i=1; i<=10; i++)
+System.Console.Write($"{i} ");

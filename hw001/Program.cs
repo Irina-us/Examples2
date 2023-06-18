@@ -11,7 +11,15 @@
 // 918 -> 1
 
 System.Console.WriteLine("Введите любое трехзначное число, программа выдаст вторую цифру этого числа");
-int num = Convert.ToInt32( Console.ReadLine() );
+    
+    int num = Convert.ToInt32( Console.ReadLine() );
+    
+
+if (num < 100 || num >= 1000) //  знак  ||  = или
+    {
+    System.Console.WriteLine($"Параметры ввода не соответствуют требованиям, введите трехзначное число");
+return;
+    }
 int x1 = num / 10; // левая цифра двузначного числа = целочисленное деление на 10
-int x2 = x1%10; // правая цифра двузначного числа = остаток от деления на 10
-System.Console.WriteLine($"{num}->{x2}");
+int x2 = num%10; // правая цифра двузначного числа = остаток от деления на 10
+System.Console.WriteLine($"{num}->{x1}");

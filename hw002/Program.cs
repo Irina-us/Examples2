@@ -12,8 +12,9 @@ int num = Convert.ToInt32( Console.ReadLine() );
 while (num > 999)
 { 
     num /=10;
-}
     System.Console.WriteLine($"Третья цифра {num%10}");
+}
+    
 
 if (num < 100)
 {
